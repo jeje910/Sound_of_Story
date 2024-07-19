@@ -1,6 +1,6 @@
 # [Findings of EMNLP 2023] Sound of Story: Multi-modal Storytelling with Audio", Findings of EMNLP 20223
 
-This repository is for "Sound of Story: Multi-modal Storytelling with Audio", Findings of EMNLP 20223.
+This repository is official for "[Sound of Story: Multi-modal Storytelling with Audio](https://arxiv.org/abs/2310.19264)", Findings of EMNLP 2023.
 
 ## Abstract
 
