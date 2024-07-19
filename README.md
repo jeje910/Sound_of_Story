@@ -60,7 +60,11 @@ sh data_processing.sh
 ## Citation
 
 @inproceedings{jaeyeon2023sound,
+
   title={Sound of Story: Multi-modal Storytelling with Audio},
+
   author={Jaeyeon, BAE and Jeong, Seokhoon and Kang, Seokun and Han, Namgi and Lee, Jae-Yon and Kim, Hyounghun and Kim, Taehwan},
+
   booktitle={The 2023 Conference on Empirical Methods in Natural Language Processing}
+
 }
