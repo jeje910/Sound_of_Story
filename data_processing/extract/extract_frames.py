@@ -71,7 +71,9 @@ def main(dir_path):
             json_data.append(json.loads(line))
             movie_names.append(ast.literal_eval(line)['Movie'])
             
-    for video in sorted(os.listdir(dir_path)):
+    for i, video in enumerate(sorted(os.listdir(dir_path))):
+        if i == 0 or i == 1:
+            continue
         video_path = os.path.join(dir_path, video)
         extract_frames(video_path)
         frame_num = json_data[movie_names.index(video[:-4])]['Frames']
