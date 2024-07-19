@@ -36,6 +36,9 @@ Storytelling is multi-modal in the real world. When one tells a story, one may u
 > https://github.com/m-bain/CondensedMovies/tree/master/data/metadata
 
 
+
+**※ Note that the shell scripts are in data_processing directory so the codes below should be done in data_processing directory.**
+
 1. After download all the datsets, run the processing codes as follow:
 
 ```
@@ -64,10 +67,10 @@ sh background_sound.sh
 3. Finally, you can use the code below to extract the frames we will use as follow:
 
 ```
-sh extract_frames.sh
+sh frame_processing.sh
 ```
 
-Now, the dataset is ready to use.
+After running the scripts above, all the data will be on the data folder. Now, the dataset is ready to use.
 
 
 ## 3. Retrieval
