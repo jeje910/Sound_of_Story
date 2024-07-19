@@ -8,7 +8,7 @@ import ast
 
 def main(dir_path):
     # CMD paths
-    desc_csv_path = '/home1/s20225168/Sound_of_Story/data_processing/CMD/descriptions.csv'
+    desc_csv_path = './CMD_descriptions.csv'
 
 
     dst_dir_path = "./processed_data"

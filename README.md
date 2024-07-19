@@ -36,19 +36,39 @@ Storytelling is multi-modal in the real world. When one tells a story, one may u
 > https://github.com/m-bain/CondensedMovies/tree/master/data/metadata
 
 
-1. After download all the datsets, run the processing codes as follow
+1. After download all the datsets, run the processing codes as follow:
 
 ```
 sh video_processing.sh
 ```
 
+- This code is to make the movie having proper Serial Number and merge the short clips into one so that the videos becomes more informative
+
 ※ Note that you **MUST** change the path for each data dataset in shell script code
 
-2. After all movies are generated & processed, Run the post processing code as follow
+2. After all movies are generated & processed, Run the post processing code as follow:
 
 ```
-sh data_processing.sh
+git clone https://github.com/bytedance/music_source_separation.git
+cd music_source_separation
+python3 -m bytesep download_checkpoints
+cd ..
+mv music_source_separation/bytesep/ ./
+sh background_sound.sh
 ```
+
+- This code is decouple the background sound from original sound.
+
+※ We use [batedance](https://github.com/bytedance/music_source_separation) code to extract the background sound. so you can also refer to it.
+
+3. Finally, you can use the code below to extract the frames we will use as follow:
+
+```
+sh extract_frames.sh
+```
+
+Now, the dataset is ready to use.
+
 
 ## 3. Retrieval
 
